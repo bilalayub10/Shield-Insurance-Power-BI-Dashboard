@@ -1,5 +1,20 @@
 # Shield Insurance Company Insights Dashboard
 
+## [**Live Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiYTg4NGRiNDctY2YyMC00M2QyLWJhM2QtMmUzOWQ2YWE1NjM3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=cbe39129d0186442d530)
+
+## Table of Contents
+
+- [Project Objective](#project-objective)
+- [Data Overview](#data-overview)
+- [Project Approach](#project-approach)
+- [Dashboard Views](#dashboard-views)
+   - [Home View](#home-view)
+   - [General View](#general-view)
+   - [Sales Mode Analysis View](#sales-mode-analysis-view)
+   - [Age Group Analysis View](#age-group-analysis-view)
+- [Tools & Technologies](#tools--technologies)
+- [Let's Connect](#lets-connect)
+
 ## Project Objective
 This project aimed to **design an interactive Power BI dashboard** for Shield Insurance, a customer-focused insurance company. The primary objectives were to:
 *   Monitor customer and revenue growth.
@@ -69,7 +84,7 @@ To deliver a clean, insightful, and interactive dashboard for Shield Insurance, 
 ### 2. Data Modeling
 - Established relationships between fact and dimension tables using keys like `customer_code`, `policy_id`, and `date`
 - Built a **star schema** model in Power BI to ensure optimized performance and clean filtering
-![Data Model](images/data-model.png)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Data%20Model.JPG)
 
 ### 3. 🧠 Calculations with DAX
 - Created DAX measures to track **KPIs** such as:
@@ -97,7 +112,7 @@ The dashboard is organized into four key views — including a Home Page for nav
 
 ### Home View
 This serves as the main navigation hub, allowing users to easily jump between General, Sales Mode, and Age Group views.
-![Home View](images/data-model.png)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Home%20View.JPG)
 
 ### General View
 Offers a high-level overview of customer and revenue performance:
@@ -106,7 +121,7 @@ Offers a high-level overview of customer and revenue performance:
 - Breaks down revenue and customers by **city** and **age group**.
 - Helps quickly assess overall performance and key customer segments.
 
-![General View](images/data-model.png)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/General%20View.JPG)
 
 **Key Insights from the View:**
 - **Delhi NCR** is the **top-performing city**, contributing over ₹400 million in revenue from more than 11,000 customers.
@@ -114,13 +129,14 @@ Offers a high-level overview of customer and revenue performance:
 - Revenue reached a high point of **₹264 million in March 2023**, before dropping to ₹154 million in April. Customer count followed a similar pattern.
 - **Customer segmentation by city and age group** helps identify high-performing segments, such as the **31–40 age group in Delhi NCR**, which alone generates ₹127M revenue with over 4,000 customers.
 
-### Sales Mode Analysis
+### Sales Mode Analysis View
 Breaks down performance across different sales channels:
 - Shows customer and revenue split across **sales modes** (Offline Agent, Online App, etc.).
 - Visualizes monthly trends in sales channel performance.
 - Helps identify which channels are growing or underperforming.
 
-![Sales Mode Analysis](images/data-model.png)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Sales%20Mode%20Analysis%20View.JPG)
+
 
 **Key Insights from the View:**
 - The **Offline-Agent channel significantly leads** in both customer share (55.41%) and revenue contribution (55.67%).
@@ -128,13 +144,13 @@ Breaks down performance across different sales channels:
 - The near-identical pattern between customer count and revenue share across channels suggests a **relatively consistent average revenue per customer**.
 - While Offline-Agent consistently leads in monthly customer acquisition, **digital channels (Online-App and Online-Website) surpassed Offline-Direct by February 2023**, highlighting their growing adoption.
 
-### Age Group Analysis
+### Age Group Analysis View
 Explores customer behavior across various age segments:
 - Displays total customers per **age group**.
 - Analyzes settlement rates and policy preferences by age.
 - Helps uncover which age groups are most engaged and profitable.
 
-![Age Group Analysis](images/data-model.png)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Age%20Group%20Analysis%20View.JPG)
 
 **Key Insights from the View:**
 - **Expected settlement percentage increases with age**, starting at 37.51% for 18–24 and reaching 74.33% for customers aged 65 and above.
@@ -142,6 +158,9 @@ Explores customer behavior across various age segments:
 - **Younger age groups (18–24, 25–30) show a more balanced use of online and offline channels**, while **older segments rely more heavily on traditional offline agent interactions**.
 - The **31–40 and 41–50 age segments demonstrate the highest diversity and volume in policy selection**, indicating opportunities for age-targeted marketing and policy design.
 - The **31–40 group is the company’s core customer base**, leading by a wide margin with 10,440 customers, followed by 41–50 (6,050 customers).
+
+[**Live Dashboard Link**](https://app.powerbi.com/view?r=eyJrIjoiYTg4NGRiNDctY2YyMC00M2QyLWJhM2QtMmUzOWQ2YWE1NjM3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=cbe39129d0186442d530) - Explore full dashboard and interact with the reports.
+
 
 ## Tools & Technologies
 
