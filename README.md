@@ -17,9 +17,9 @@
 
 ## Project Objective
 This project aimed to **design an interactive Power BI dashboard** for Shield Insurance, a customer-focused insurance company. The primary objectives were to:
-*   Monitor customer and revenue growth.
-*   Track policy trends over time.
-*   Analyze performance by age group and sales mode.
+*   Monitor customer and revenue growth
+*   Track policy trends over time
+*   Analyze performance by age group and sales mode
 
 The core idea was to shift from static reporting to a more dynamic, insight-driven view of the business.
 
@@ -31,7 +31,7 @@ Contains customer-level details
 
 **Key fields:**
 - `customer_code` – Unique identifier for each customer  
-- `dob` – Customer's date of birth  
+- `dob` – Customer's date of birth (Used to calculate age) 
 - `city` – Customer's location  
 
 ### `dim_date.csv`
@@ -77,16 +77,17 @@ A reference dimension created to map individual ages to age groups for consisten
 To deliver a clean, insightful, and interactive dashboard for Shield Insurance, I followed a structured end-to-end BI development process that involved:
 
 ### 1. Data Understanding & Cleaning
-- Reviewed five primary datasets provided by the client: `dim_customer`, `dim_date`, `dim_policies`, `fact_premiums`, and `fact_settlements`
-- Cleaned and transformed the data using **Power Query**
-- Created a custom reference table `dim_age` to categorize customers into **age groups** for consistent and reusable segmentation across visuals
+- Reviewed five primary datasets provided by the client: `dim_customer`, `dim_date`, `dim_policies`, `fact_premiums`, and `fact_settlements`.
+- Cleaned and transformed the data using **Power Query**.
+- Created a custom reference table `dim_age` to categorize customers into **age groups** for consistent and reusable segmentation across visuals.
 
 ### 2. Data Modeling
-- Established relationships between fact and dimension tables using keys like `customer_code`, `policy_id`, and `date`
-- Built a **star schema** model in Power BI to ensure optimized performance and clean filtering
-![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Data%20Model.JPG)
+- Established relationships between fact and dimension tables using keys like `customer_code`, `policy_id`, and `date`.
+- Built a **star schema** model in Power BI to ensure optimized performance and clean filtering.
 
-### 3. 🧠 Calculations with DAX
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Images/Data%20Model.JPG)
+
+### 3. Calculations with DAX
 - Created DAX measures to track **KPIs** such as:
   - Total Revenue  
   - Total Customers  
@@ -95,15 +96,15 @@ To deliver a clean, insightful, and interactive dashboard for Shield Insurance, 
 
 ### 4. Dashboard Design & Visualization
 - Designed three core views:
-  - **General View** – Tracks customer/revenue performance and breakdowns by city and age group. 
-  - **Sales Mode Analysis** – Compares revenue and customers across sales channels.  
-  - **Age Group Analysis** – Examines customer behavior, settlement rates, and policy preference by age.
+  - **General View** – Tracks customer/revenue performance and breakdowns by city and age group
+  - **Sales Mode Analysis** – Compares revenue and customers across sales channels
+  - **Age Group Analysis** – Examines customer behavior, settlement rates, and policy preference by age
 
-- Ensured a **consistent layout**, navigation pane, and filters across all views for a seamless user experience
+- Ensured a **consistent layout**, navigation pane, and filters across all views for a seamless user experience.
 
 ### 5. Testing & Insight Extraction
-- Verified filters, slicers, and cross-interactions across visuals
-- Extracted **actionable business insights** to support data-driven decision-making
+- Verified filters, slicers, and cross-interactions across visuals.
+- Extracted **actionable business insights** to support data-driven decision-making.
 
 This structured approach ensured the dashboard was not only visually compelling but also strategically useful for real-world business analysis.
 
@@ -112,16 +113,17 @@ The dashboard is organized into four key views — including a Home Page for nav
 
 ### Home View
 This serves as the main navigation hub, allowing users to easily jump between General, Sales Mode, and Age Group views.
-![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Home%20View.JPG)
+
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Images/Home%20Page%20View.JPG)
 
 ### General View
 Offers a high-level overview of customer and revenue performance:
-- Displays total revenue, customer count, and daily growth metrics.
-- Tracks monthly performance trends.
-- Breaks down revenue and customers by **city** and **age group**.
-- Helps quickly assess overall performance and key customer segments.
+- Displays total revenue, customer count, and daily growth metrics
+- Tracks monthly performance trends
+- Breaks down revenue and customers by **city** and **age group**
+- Helps quickly assess overall performance and key customer segments
 
-![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/General%20View.JPG)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Images/General%20View.JPG)
 
 **Key Insights from the View:**
 - **Delhi NCR** is the **top-performing city**, contributing over ₹400 million in revenue from more than 11,000 customers.
@@ -131,11 +133,11 @@ Offers a high-level overview of customer and revenue performance:
 
 ### Sales Mode Analysis View
 Breaks down performance across different sales channels:
-- Shows customer and revenue split across **sales modes** (Offline Agent, Online App, etc.).
-- Visualizes monthly trends in sales channel performance.
-- Helps identify which channels are growing or underperforming.
+- Shows customer and revenue split across **sales modes** (Offline Agent, Online App, etc.)
+- Visualizes monthly trends in sales channel performance
+- Helps identify which channels are growing or underperforming
 
-![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Sales%20Mode%20Analysis%20View.JPG)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Images/Sales%20Mode%20Analysis%20View.JPG)
 
 
 **Key Insights from the View:**
@@ -146,11 +148,11 @@ Breaks down performance across different sales channels:
 
 ### Age Group Analysis View
 Explores customer behavior across various age segments:
-- Displays total customers per **age group**.
-- Analyzes settlement rates and policy preferences by age.
-- Helps uncover which age groups are most engaged and profitable.
+- Displays total customers per **age group**
+- Analyzes settlement rates and policy preferences by age
+- Helps uncover which age groups are most engaged and profitable
 
-![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Age%20Group%20Analysis%20View.JPG)
+![](https://github.com/bilalayub10/Shield-Insurance-Power-BI-Dashboard/blob/main/Images/Age%20Group%20Analysis%20View.JPG)
 
 **Key Insights from the View:**
 - **Expected settlement percentage increases with age**, starting at 37.51% for 18–24 and reaching 74.33% for customers aged 65 and above.
@@ -164,10 +166,10 @@ Explores customer behavior across various age segments:
 
 ## Tools & Technologies
 
-- **Power BI** – For building the interactive dashboard and visualizing business insights.  
-- **Power Query** – For data transformation and cleaning within Power BI.  
-- **DAX (Data Analysis Expressions)** – A formula language used to create calculated measures and apply time intelligence.  
-- **Excel** – Used as the original data source for importing CSV files.
+- **Power BI** – For building the interactive dashboard and visualizing business insights
+- **Power Query** – For data transformation and cleaning within Power BI
+- **DAX (Data Analysis Expressions)** – A formula language used to create calculated measures and apply time intelligence
+- **Excel** – Used as the original data source for importing CSV files
 
 ## Let's Connect
 Feel free to reach out for any feedback or to connect:
