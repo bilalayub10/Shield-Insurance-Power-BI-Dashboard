@@ -159,7 +159,7 @@ Explores customer behavior across various age segments:
 - The **31–40 age group shows the highest engagement across all sales modes**, particularly with Offline-Agent.
 - **Younger age groups (18–24, 25–30) show a more balanced use of online and offline channels**, while **older segments rely more heavily on traditional offline agent interactions**.
 - The **31–40 and 41–50 age segments demonstrate the highest diversity and volume in policy selection**, indicating opportunities for age-targeted marketing and policy design.
-- The **31–40 group is the company’s core customer base**, leading by a wide margin with 10,440 customers, followed by 41–50 (6,050 customers).
+- The **31–40 age group is the company’s core customer base**, leading by a wide margin with 10,440 customers, followed by 41–50 (6,050 customers).
 
 [**Live Dashboard Link**](https://app.powerbi.com/view?r=eyJrIjoiYTg4NGRiNDctY2YyMC00M2QyLWJhM2QtMmUzOWQ2YWE1NjM3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=cbe39129d0186442d530) - Explore full dashboard and interact with the reports.
 
